@@ -97,7 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./client/components/Nav.jsx");
+/* harmony import */ var _Playlist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Playlist */ "./client/components/Playlist.jsx");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
 
 
@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Ringo's Song Selector"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Playlist__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -134,10 +134,10 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ "./client/components/Nav.jsx":
-/*!***********************************!*\
-  !*** ./client/components/Nav.jsx ***!
-  \***********************************/
+/***/ "./client/components/Playlist.jsx":
+/*!****************************************!*\
+  !*** ./client/components/Playlist.jsx ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -155,24 +155,20 @@ console.log(_data_beatles_js__WEBPACK_IMPORTED_MODULE_1__["default"]); // Probab
 var filterSongs = _data_beatles_js__WEBPACK_IMPORTED_MODULE_1__["default"].songs.filter(function (data) {
   return data.mood === 'sad';
 });
-console.log(filterSongs);
-console.log(filterSongs.map(function (data) {
-  return data.songName;
-})); // Random functionality
+console.log(filterSongs); // console.log(filterSongs.map(data => data.songName))
+// // Random functionality
+// const randomSong = function (obj) {
+//   var keys = Object.keys(obj);
+//   console.log(keys)
+//   return obj[keys[keys.length * Math.random() << 0]];
+// };
+// console.log(randomSong(filterSongs))
 
-var randomSong = function randomSong(obj) {
-  var keys = Object.keys(obj);
-  console.log(keys);
-  return obj[keys[keys.length * Math.random() << 0]];
+var Playlist = function Playlist() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Playlist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, [filterSongs])));
 };
 
-console.log(randomSong(filterSongs));
-
-var Nav = function Nav() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Nav"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Nav);
+/* harmony default export */ __webpack_exports__["default"] = (Playlist);
 
 /***/ }),
 
