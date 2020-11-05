@@ -1,19 +1,24 @@
-const songs = {
-  album: [
+const beatles = {
+  songs: [
     {
       id: 1,
-      album: 'A Hard Days Night',
-      title: 'Animalia',
-      year: 2020,
-      mood:   'Happy' 
+      albumName: 'Yellow Submarine',
+      songName: 'Yellow Submarine',
+      year: '1969',
+      image: 'www.image.com/',
+      audio: 'www.image.com/',
+      mood: 'happy'
     },
     {
-
+      id: 1,
+      albumName: 'Yellow Submarine',
+      songName: 'Yellow Submarine',
+      year: '1969',
+      image: 'www.image.com/',
+      audio: 'www.image.com/',
+      mood: 'happy'
     }
-  ],
-  album2: [
-
   ]
 }
 
-export default ranks
+export default beatles
