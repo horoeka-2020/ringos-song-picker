@@ -8,7 +8,10 @@ const Song = (props) => {
     const filterSongs = music.songs.filter((data) => data.mood == 'sad')
     const single = filterSongs[0]
 
-    console.log(single)
+    const song = props.match.params.songName
+    console.log(song)
+
+    // console.log(single)
     return (
         <div>
             <h2>Songs</h2>

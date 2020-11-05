@@ -12,7 +12,7 @@ const App = () => {
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
         <Route path='/playlist/:mood' component={Playlist} />
-        <Route path='/playlist/:mood/songs' component={Song} />
+        <Route path='/playlist/:mood/:songName' component={Song} />
         <Route exact path='/' component={Home} />
       </div>
     </>

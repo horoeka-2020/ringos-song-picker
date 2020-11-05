@@ -26,11 +26,11 @@ const Playlist = (props) => {
   // console.log(props.match.params.mood)
 
   // console.log(music.songs.filter((data) => data.mood === mood))
+  // const songName = props..replace(/[^A-Z0-9]/ig, "");
 
 
   const moodFilter = music.songs.filter((data) => data.mood === mood)
   console.log(moodFilter.map(data => data.songName))
-
   return (
     <div>
       <h2>Playlist</h2>
@@ -38,7 +38,7 @@ const Playlist = (props) => {
             <div className='card-content'>
               <h2></h2>
               <img className='album' src={data.image}/>
-              <a href={data.audio}>Spotify</a>
+              <Link to={`/playlist/${mood}/${songName}`}><a className="border-button centre">{data.songName}</a></Link>
             </div>
               )}
 
