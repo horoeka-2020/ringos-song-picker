@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Import Link and Route
+// Import Link and Route
+import { Route, Link } from 'react-router-dom'
+
 
 // Import music from data file
 import music from '../../data/beatles.js'
@@ -22,12 +26,17 @@ console.log(filterSongs)
 
 // console.log(randomSong(filterSongs))
 
-const Playlist = () => {
+const Playlist = (props) => {
   return (
     <div>
       <h2>Playlist</h2>
       <ul>
-        <li>{[filterSongs]}</li>
+      {filterSongs.map((data) => {
+        return <li key={data.songName}>
+          {/* <Link to={`/song/${props.match.params.song}/${data.songName}`}>{data}</Link> */}
+          {data}
+        </li>
+      })}
       </ul>
     </div>
   )
