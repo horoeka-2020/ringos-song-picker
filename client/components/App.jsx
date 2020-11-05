@@ -10,8 +10,8 @@ const App = () => {
       <h1>Ringo's Song Selector</h1>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
-        <Playlist />
-        <Home />
+        <Route path='/playlist/:mood' component={Playlist} />
+        <Route exact path='/' component={Home} />
       </div>
     </>
   )

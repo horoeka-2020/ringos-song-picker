@@ -30,7 +30,7 @@ const Playlist = (props) => {
     <div>
       <h2>Playlist</h2>
       <ul>
-     
+        
       </ul>
     </div>
   )
