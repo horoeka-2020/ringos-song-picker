@@ -123,17 +123,26 @@ nav a {
 /* th */
 
 /* styling for playlist cards */
+.background{
+  background-image: url("./images/lego-beatles.jpg");
+  background-size: cover;
+}
 
 .card-content {
-  position: relative;
-  left: 25%;
+  /* position: relative;
+  
+  left: 250px; */
+  display: block;
+  margin: 0 auto;
   height: 200px;
   width: 500px;
   background-color: red;
+  opacity: 0.6;
+  border-radius: 15px;
 }
 .card-content:hover {
-  background-color: blue;
-  box-shadow: 3px 7px #888888;
+  background-color: white;
+  box-shadow: 3px 7px #111111;
   transition: 1s;
 }
 /* size of album images */
