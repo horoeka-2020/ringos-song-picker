@@ -24,16 +24,20 @@ const Playlist = (props) => {
   const mood = props.match.params.mood
   console.log(props.match.params.mood)
 
-  console.log(music.songs.filter((data) => data.mood === mood))
+  const moodFilter = music.songs.filter((data) => data.mood === mood)
+  console.log(moodFilter.map(data => data.songName))
 
   return (
     <div>
       <h2>Playlist</h2>
-      <ul>
-        <li>
-          {music.songs.filter((data) => data.mood === mood)}
-          </li>
-        </ul>
+            {moodFilter.map(data => 
+            <div className='card-content'>
+              <h2></h2>
+              <img className='album' src={data.image}/>
+              <a href={data.audio}>Spotify</a>
+            </div>
+              )}
+
     </div>
   )
 }

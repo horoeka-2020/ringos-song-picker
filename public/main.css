@@ -6,3 +6,7 @@
 .main div {
   margin: 0px 10px 0px 10px;
 }
+
+.album {
+  height: 150px;
+}
