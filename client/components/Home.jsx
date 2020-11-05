@@ -18,8 +18,8 @@ const Home = (props) => {
 
     <div className="banner-area center">
       <h1> What's the mood?</h1>
-        <Link to={`/playlist/${props.match.params.mood}`}><a className="border-button center">Happy</a></Link>
-        <Link to={`/playlist/${props.match.params.mood}`}><a className="border-button center">Sad</a></Link>
+        <Link to={`/playlist/happy`}><a className="border-button center">Happy</a></Link>
+        <Link to={`/playlist/sad`}><a className="border-button center">Sad</a></Link>
     </div>
     </>
     
