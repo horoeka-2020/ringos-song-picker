@@ -150,7 +150,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _data_beatles_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data/beatles.js */ "./data/beatles.js");
  // Import Link and Route
-// Import Link and Route
 
  // Import music from data file
 
@@ -171,14 +170,17 @@ console.log(filterSongs); // console.log(filterSongs.map(data => data.songName))
 // console.log(randomSong(filterSongs))
 
 var Playlist = function Playlist(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Playlist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, filterSongs.map(function (data) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: data.songName
-    }, data);
-  })));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Playlist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Playlist);
+{
+  filterSongs.map(function (data) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: data.songName
+    }, data);
+  });
+}
 
 /***/ }),
 

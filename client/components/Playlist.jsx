@@ -1,7 +1,6 @@
 import React from 'react'
 
 // Import Link and Route
-// Import Link and Route
 import { Route, Link } from 'react-router-dom'
 
 
@@ -31,15 +30,17 @@ const Playlist = (props) => {
     <div>
       <h2>Playlist</h2>
       <ul>
-      {filterSongs.map((data) => {
-        return <li key={data.songName}>
-          {/* <Link to={`/song/${props.match.params.song}/${data.songName}`}>{data}</Link> */}
-          {data}
-        </li>
-      })}
+     
       </ul>
     </div>
   )
 }
 
 export default Playlist
+
+{filterSongs.map((data) => {
+  return <li key={data.songName}>
+    {/* <Link to={`/song/${props.match.params.song}/${data.songName}`}>{data}</Link> */}
+    {data}
+  </li>
+})}
