@@ -1,12 +1,183 @@
-.main {
-  display: flex;
-  flex-direction: row;
+@font-face {
+  font-family: 'bootleregular';
+  src: url('fonts/bootle__-webfont.woff2') format('woff2'),
+       url('fonts/bootle__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap);
+
+#newfont{
+  font-family:'bootleregular';
 }
 
-.main div {
-  margin: 0px 10px 0px 10px;
+*{
+  box-sizing: border-box;
 }
 
+body{
+  text-align: left;
+  margin: 0 0 0 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+/* }this is the top header */
+.header {
+  height: 140px;
+  top: 0px;
+  background-color: black;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+/*  the next 3 is for the UBSMG logo */
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
+padding-top: 30px;
+}
+
+.logo {
+  margin: 0, 0, 0, 0;
+  float: center;
+  line-height: 100px;
+}
+
+.logo a {
+  font-size: 30px;
+  text-align: center;
+  font-family: "bootleregular", "Arial";
+  font-weight: 400;
+  color: white;
+}
+
+/* the next 2 is for the 'About link below' */
+nav {
+  float: right;
+  line-height: 1px;
+  padding-right: 10%;
+}
+
+nav a {
+  font-family: "Arial";
+  font-size: 22px;
+  color: white;
+}
+
+/* the next 4 to do with the homepage, inc mood buttons */
+.banner-area {
+  width: 100%;
+  height: 1080px;
+  position: fixed;
+  top: 100px;
+  line-height: 1em;
+  padding-top: 40px;
+  /* background: url("/images/foodiesfeed.com_man-making-homemade-spaghettiEdited.jpg"); */
+  background: url("./images/record.jpg");
+  background-color: yellow;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-area h1 {
+  padding: 5%;
+  text-align:center;
+  font-family: "Arial";
+  color: white;
+  line-height:normal;
+}
+
+h1 {
+  color: white;
+}
+
+.banner-area p {
+  padding-top: 5%;
+  font-size:smaller;
+  word-spacing: 10px;
+  text-align:center;
+  font-family: "bootleregular";
+  color: white;
+  line-height:normal;
+}
+
+
+.border-button {
+  color: white;
+  text-align: center;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px 30px 20px 30px;
+  border-radius: 8px;
+  font-family: 'Arial';
+}
+
+/* styling for playlist cards */
+
+.card-content {
+  position: relative;
+  left: 25%;
+  height: 200px;
+  width: 500px;
+  background-color: red;
+}
+.card-content:hover {
+  background-color: blue;
+  box-shadow: 3px 7px #888888;
+  transition: 1s;
+}
+/* size of album images */
 .album {
   height: 150px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border: 2px solid white;
+}
+
+/*  these need to be edited for playlist and song pages */
+/* .content-area {
+  padding-left: 6%;
+  width: 100%;
+  position: relative;
+  top: 700px;
+  background: whitesmoke;
+  height: 1200px;
+
+}
+
+.content-area h2 {
+  font-family: "Grenze Gotisch", "Kumbh Sans";
+  color: #733E39;
+  font-size: 28pt;
+  padding-top: 100px;
+  scroll-margin-top: 100px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color:#0D0D0D;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  color:#0D0D0D;
+  line-height: 7mm;
+  font-size: 12pt;
+}
+*/
+
+
+/* any media queries go below */
+@media screen and (max-width: 700px) {
+  .button-area {
+      width: 10%;
+  }
 }
