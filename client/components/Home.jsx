@@ -6,15 +6,7 @@ const Home = (props) => {
   return (
     
     <>
-    {console.log(props.match.params)}
-    <div className="header">
-      <div className="wrapper">
-        <div className="logo">
-        <h1>Ringo's Rad Records</h1>
-        </div>
-      </div>
-    </div>
-    
+    {/* {console.log(props.match.params)} */}
 
     <div className="banner-area center">
       <h1> What's the mood?</h1>
