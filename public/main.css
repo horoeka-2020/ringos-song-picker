@@ -26,7 +26,7 @@ body{
 }
 
 /* }this is the top header */
-header {
+.header {
   height: 140px;
   top: 0px;
   background-color: black;
@@ -80,7 +80,7 @@ nav a {
   line-height: 1em;
   padding-top: 40px;
   /* background: url("/images/foodiesfeed.com_man-making-homemade-spaghettiEdited.jpg"); */
-  background: url("record.jpg");
+  background: url("./images/record.jpg");
   background-color: yellow;
   background-size: cover;
   background-position: center center;
@@ -92,6 +92,10 @@ nav a {
   font-family: "Arial";
   color: white;
   line-height:normal;
+}
+
+h1 {
+  color: white;
 }
 
 .banner-area p {
