@@ -161,9 +161,20 @@ var filterSongs = _data_beatles_js__WEBPACK_IMPORTED_MODULE_1__["default"].songs
   return data.mood === 'sad';
 });
 console.log(filterSongs);
+console.log(filterSongs.map(function (data) {
+  return data.songName;
+})); // Random functionality
+
+var randomSong = function randomSong(obj) {
+  var keys = Object.keys(obj);
+  console.log(keys);
+  return obj[keys[keys.length * Math.random() << 0]];
+};
+
+console.log(randomSong(filterSongs));
 
 var Nav = function Nav() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Nav"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Build your ranks list here")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Nav"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
