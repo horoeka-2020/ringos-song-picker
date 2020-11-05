@@ -1,6 +1,7 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
-import Nav from './Nav'
+import Playlist from './Playlist'
 import Home from './Home'
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       <h1>Ringo's Song Selector</h1>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
-        <Nav />
+        <Playlist />
         <Home />
       </div>
     </>
