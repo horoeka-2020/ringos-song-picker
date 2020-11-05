@@ -120,6 +120,28 @@ h1 {
   font-family: 'Arial';
 }
 
+/* styling for playlist cards */
+
+.card-content {
+  position: relative;
+  left: 25%;
+  height: 200px;
+  width: 500px;
+  background-color: red;
+}
+.card-content:hover {
+  background-color: blue;
+  box-shadow: 3px 7px #888888;
+  transition: 1s;
+}
+/* size of album images */
+.album {
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border: 2px solid white;
+}
+
 /*  these need to be edited for playlist and song pages */
 /* .content-area {
   padding-left: 6%;
