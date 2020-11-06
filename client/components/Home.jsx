@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Button from '@material-ui/core/Button';
+
 import Playlist from './Playlist'
+
 
 const Home = (props) => {
   return (
@@ -10,8 +13,10 @@ const Home = (props) => {
 
     <div className="banner-area center">
       <h1> What's the mood?</h1>
-        <Link to={`/playlist/happy`}><a className="border-button center">Happy</a></Link>
-        <Link to={`/playlist/sad`}><a className="border-button center">Sad</a></Link>
+        <div className="centerButtons">
+          <Link to={`/playlist/happy`}><Button className="center" variant="contained" color="primary">Happy</Button></Link>
+          <Link to={`/playlist/sad`}><Button className="center" variant="contained" color="primary">Sad</Button></Link>
+        </div>
     </div>
     </>
     
