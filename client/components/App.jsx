@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 
 import Playlist from './Playlist'
 import Home from './Home'
+import Song from './Song'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         </div>
     </div>
         <Route path='/playlist/:mood' component={Playlist} />
+        <Route exact path='/:songID' component={Song} />
         <Route exact path='/' component={Home} />
       </div>
     </>
