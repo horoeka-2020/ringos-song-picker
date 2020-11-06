@@ -47,6 +47,11 @@ width: 15%;
 padding-top: 30px;
 }
 
+.centerButtons {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   margin: 0, 0, 0, 0;
   float: center;
