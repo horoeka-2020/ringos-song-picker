@@ -21,9 +21,6 @@ body{
   margin: 0 0 0 0;
 }
 
-.wrapper {
-  margin: 0 auto;
-}
 
 /* }this is the top header */
 .header {
@@ -33,6 +30,12 @@ body{
   width: 100%;
   z-index: 12;
   position: fixed;
+}
+/* Ringo's Rad Records here */
+.header h1 {
+  color: white;
+  font: "bootleregular";
+  text-align: center;
 }
 
 /*  the next 3 is for the UBSMG logo */
@@ -94,9 +97,6 @@ nav a {
   line-height:normal;
 }
 
-h1 {
-  color: white;
-}
 
 .banner-area p {
   padding-top: 5%;
@@ -119,6 +119,8 @@ h1 {
   border-radius: 8px;
   font-family: 'Arial';
 }
+
+/* th */
 
 /* styling for playlist cards */
 .background{

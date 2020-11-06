@@ -1,20 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Playlist from './Playlist'
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <>
-    <div className="header">
-      <div className="wrapper">
-        <div className="logo">
-        <h1>Ringo's Rad Records</h1>
-        </div>
-      </div>
-    </div>
     
+    <>
+    {/* {console.log(props.match.params)} */}
 
     <div className="banner-area center">
       <h1> What's the mood?</h1>
-        <a className="border-button center" href="#">Happy</a>
+        <Link to={`/playlist/happy`}><a className="border-button center">Happy</a></Link>
+        <Link to={`/playlist/sad`}><a className="border-button center">Sad</a></Link>
     </div>
     </>
     
