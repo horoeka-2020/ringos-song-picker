@@ -53,6 +53,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "express": "^4.17.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "react-rating-stars-component": "^2.2.0"
   }
 }

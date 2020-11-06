@@ -14,8 +14,20 @@ const Home = (props) => {
     <div className="banner-area center">
       <h1> What's the mood?</h1>
         <div className="centerButtons">
-          <Link to={`/playlist/happy`}><Button size="large" className="center" variant="contained" color="primary">Happy</Button></Link>
-          <Link to={`/playlist/sad`}><Button size="large" className="center" variant="contained" color="primary">Sad</Button></Link>
+          <Link to={`/playlist/happy`}><Button size="large" className="center" style={{
+        borderRadius: "30px",
+        backgroundColor: "orange",
+        padding: "18px 36px",
+        fontSize: "18px",
+        width: "200px"
+    }} variant="contained" color="primary">Happy</Button></Link>
+          <Link to={`/playlist/sad`}><Button size="large" className="center" style={{
+        borderRadius: "30px",
+        backgroundColor: "purple",
+        padding: "18px 36px",
+        fontSize: "18px",
+        width: "200px"
+    }} variant="contained" color="primary">Sad</Button></Link>
         </div>
     </div>
     </>

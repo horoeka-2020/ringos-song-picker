@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import Playlist from './Playlist'
 import Home from './Home'
@@ -13,7 +14,7 @@ const App = () => {
       <div className='main'>
       <div className="header">
         <div className="logo">
-        <h1>Ringo's Rad Records</h1>
+        <Link to='/'><h1>Ringo's Rad Records</h1></Link>
         </div>
     </div>
         <Route path='/playlist/:mood' component={Playlist} />
