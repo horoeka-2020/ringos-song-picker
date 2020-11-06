@@ -36,9 +36,8 @@ const Playlist = (props) => {
     <div className="background">
       <h2 className="playlist">Playlist</h2>
             {moodFilter.map(data => 
-            <div className='card-content'>
-              <h2></h2>
-            <Link to={`/${data.id}`}>{data.songName}</Link>
+            <Link to={`/${data.id}`}>
+              <div className='card-content'>
               <div className="card-image">
               <img className='album' src={data.image}/>
               </div>
@@ -47,6 +46,7 @@ const Playlist = (props) => {
               <h4></h4>
               </div>
             </div>
+            </Link>
               )}
     </div>
   )

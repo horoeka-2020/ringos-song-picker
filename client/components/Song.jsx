@@ -1,4 +1,4 @@
-import { parseAsync } from '@babel/core'
+
 import React from 'react'
 
 import { Router, Link } from 'react-router-dom'
@@ -12,12 +12,17 @@ const Song = (props) => {
     console.log(selectedSong)
     return (
         <div className="individual-song">
-            <h2>Songs</h2>
-            <img width="300" height="300" src={selectedSong.image} />
+            <div className="song-card">
+
+            <h2>{selectedSong.songName}</h2>
+            <img className="album-large" src={selectedSong.image} />
             <p>Title: {selectedSong.songName}</p>
             <p>Album: {selectedSong.albumName}</p>
             <p>Year: {selectedSong.year}</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TZip_br_v3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="video">
+            <iframe className="video" width="200" height="150" src={selectedSong.audio} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
         </div>
     )
 }
