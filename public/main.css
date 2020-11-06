@@ -47,11 +47,6 @@ width: 15%;
 padding-top: 30px;
 }
 
-.centerButtons {
-  display: flex;
-  justify-content: center;
-}
-
 .logo {
   margin: 0, 0, 0, 0;
   float: center;
@@ -139,8 +134,8 @@ nav a {
 }
 .background{
   background-image: url("./images/lego-beatles.jpg");
-  background-size: cover;
-  margin-top: -50px;
+  background-size: 100%;
+  padding-bottom: 230px;
 }
 
 .card-content {
@@ -170,7 +165,6 @@ nav a {
 }
 
 .song-title{
-  float: center;
   margin-left: 15px;
   font-family: "bootleregular";
   color: white;
