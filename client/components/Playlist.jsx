@@ -38,7 +38,7 @@ const Playlist = (props) => {
             {moodFilter.map(data => 
             <div className='card-content'>
               <h2></h2>
-            <Link to={`/${data.songName.replace(/[^A-Z0-9]/ig, "")}`}>{data.songName}</Link>
+            <Link to={`/${data.id}`}>{data.songName}</Link>
               <img className='album' src={data.image}/>
               <h4></h4>
               <a href={data.audio}>Spotify</a>

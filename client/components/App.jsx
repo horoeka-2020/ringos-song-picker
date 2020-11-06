@@ -17,7 +17,7 @@ const App = () => {
         </div>
     </div>
         <Route path='/playlist/:mood' component={Playlist} />
-        <Route exact path='/:songName' component={Song} />
+        <Route exact path='/:songID' component={Song} />
         <Route exact path='/' component={Home} />
       </div>
     </>
