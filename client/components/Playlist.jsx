@@ -29,13 +29,16 @@ const Playlist = (props) => {
 
   return (
     <div className="background">
-      <h2>Playlist</h2>
+      <h2 className="playlist">Playlist</h2>
             {moodFilter.map(data => 
             <div className='card-content'>
-              <h2></h2>
+              <div className="card-image">
               <img className='album' src={data.image}/>
+              </div>
+              <div className="card-text">
+              <h2 className='song-title'>{data.songName}</h2>
               <h4></h4>
-              <a href={data.audio}>Spotify</a>
+              </div>
             </div>
               )}
     </div>
