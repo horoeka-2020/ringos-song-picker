@@ -27,6 +27,12 @@ h2 {
   text-align: center;
 }
 
+h1 {
+  font-family:'bootleregular';
+  color: white;
+  text-align: center;
+}
+
 p {
   font-family:'bootleregular';
   size: 25px;
